@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game of Life</title>
+    <!-- Our Style Sheet -->
+    <link rel="stylesheet" href="gol.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <input
+        class="btn"
+        type="button"
+        id="btnstartstop"
+        value="Start"
+        onclick="startStopGol();"
+      />
+      <input class="btn" type="button" id="btnrandom" value="Random" />
+      <input
+        class="btn"
+        type="button"
+        id="btnreset"
+        value="Reset"
+        onclick="resetWorld();"
+      />
+    </div>
+
+    <div id="gencounter">
+      <h3>Current Generation: <span id="gencount"></span></h3>
+    </div>
+
+    <div class="map">
+      <div id="world"></div>
+    </div>
+
+    <script src="gol.js"></script>
+  </body>
+</html>
